@@ -1,0 +1,103 @@
+/* FOOD */
+.food {
+  height: 500px;
+  width: 100%;
+  display: flex; 
+}
+.food .separator {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.separator .food-img {width: 100%;height: 50%;}
+.separator .food-text {width: 100%;height: 50%;}
+.separator .food-img img {
+  max-width: 100%;
+  max-height: 100%;
+  background-size: contain;
+}
+.separator .img-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+.separator .img-2 img {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.separator .img-1 img {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.food-img {
+  display: flex;
+}
+.food-img-desc {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--text-color);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  letter-spacing: 3px;
+}
+
+.food-img-desc .img-desc-title {
+  font-size: 70px;
+  font-family: var(--font-alt);
+  text-align: right;
+}
+.food-img-desc .img-desc-detail {
+  font-size: 19px;
+  font-family: var(--font-alt);
+}
+.separator .food-text {
+  display: flex;
+  justify-content: flex-start ;
+  width: 80%;
+  flex-wrap: wrap;
+  color: var(--text-color);
+  font-size: 70px;
+  font-family: var(--font-alt);
+  padding: 0 3rem;
+  align-items: center;
+  text-align: right;
+}
+
+.food-text .decoration {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.food-text .decoration .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--text-color);
+}
+
+.food-text .decoration .circle::before {
+  position: absolute;
+  content: "";
+  background: var(--secondary-text-color);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transform: translateX(-3rem);
+}
+.food-text .decoration .circle::after {
+  position: absolute;
+  z-index: -2;
+  content: "";
+  background: green;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transform: translateX(-16rem);
+}

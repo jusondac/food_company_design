@@ -1,0 +1,45 @@
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  background: transparent;
+  /* -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .5s ease-in-out;
+       -o-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out; */
+}
+
+.scroll {
+  /* background: -webkit-linear-gradient(159deg, rgba(244,243,139,1) 0%, rgba(34,106,29,1) 100%);
+  background: -moz-linear-gradient(159deg, rgba(244,243,139,1) 0%, rgba(34,106,29,1) 100%);
+  background: -o-linear-gradient(159deg, rgba(244,243,139,1) 0%, rgba(34,106,29,1) 100%); */
+  background: linear-gradient(159deg, rgba(244,243,139,1) 0%, rgba(34,106,29,1) 100%);
+  /* background: black; */
+  /* transition: all .5s ease-in-out; */
+}
+
+.navbar .menu {
+  /* background: linear-gradient(302deg, rgba(38,38,16,1) 0%, rgba(99,131,45,1) 65%, rgba(34,106,29,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent ; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 20rem;
+  letter-spacing: 3px;
+  color: var(--text-color);
+  font-weight: bold;}
+.navbar .brand {
+  color: var(--text-color);
+  padding-top: 1.5rem;
+  font-weight:900;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-family: var(--font-alt);
+}
